@@ -5,6 +5,7 @@ var selector_font = document.querySelector('.choseTypeFace').addEventListener('c
     style = document.getElementsByClassName('b'),
     background = document.getElementsByClassName('c'),
     out = document.getElementById('result'),
+    out_font_name = document.getElementById('user-font'),
     bgc = document.getElementById('userbg'),
     arr_font = [],
     arr_style = [],
@@ -37,6 +38,7 @@ function setTextSetting(event) {
             arr_font[2].classList.remove('active-font');
             arr_style[2].classList.remove('disabled');
             style[2].setAttribute('data-style', 'italic');
+            out_font_name.innerHTML = 'Lato, sans-serif';
             break;
         case '2':
             out.classList.add('font2');
@@ -47,6 +49,7 @@ function setTextSetting(event) {
             arr_font[2].classList.remove('active-font');
             arr_style[2].classList.remove('disabled');
             style[2].setAttribute('data-style', 'italic');
+            out_font_name.innerHTML = 'Oswald, sans-serif';
             break;
         case '3':
             out.classList.add('font3');
@@ -58,6 +61,7 @@ function setTextSetting(event) {
             arr_style[2].classList.add('disabled');
             style[2].removeAttribute('data-style');
             out.classList.remove('style-italic');
+            out_font_name.innerHTML = 'Source Sans Pro, sans-serif;';
             break;
     }
     switch(set_style){
