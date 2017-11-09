@@ -33,8 +33,12 @@
 
 
 @media only screen and (max-width : 640px){
-  .preview, .settings {
-    height:100vh;
+  #result {
+    margin-left: 0;
+  }
+  #userbg {
+    min-height: 635px;
+    height: 100%;
   }
   .setting-block-span {
     text-align: center;
@@ -52,17 +56,25 @@
 
   }
   .choose-bg {
-    display: block;
+    width: 33%;
+    display: inline-block;
     text-align: center;
     padding: 5px;
+    margin-left: 7px;
+    &:nth-child(5) {
+      width: 76%;
+
+    }
 }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-  .preview, .settings {
-    height:100vh;
+  #userbg {
+    min-height: 556px;
+    height: 100%;
   }
+
   .choose-font {
     a {
       padding: 10px 12.5px;
@@ -71,6 +83,9 @@
   .chooses-style {
     font-size: 16px;
 
+  }
+  #result {
+    font-size: 36px;
   }
 }
 	/**/
