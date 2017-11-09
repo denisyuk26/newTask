@@ -37,11 +37,12 @@
     margin-left: 0;
   }
   #userbg {
-    min-height: 635px;
+    min-height: 565px;
     height: 100%;
   }
   .setting-block-span {
     text-align: center;
+    padding-right: 12px;
   }
   .choose-font {
     display: block;
@@ -70,9 +71,17 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
+  .settings {
+   > .block-text {
+    text-align: center;
+    }
+  }
   #userbg {
     min-height: 556px;
     height: 100%;
+  }
+  #user-font {
+    bottom: 250px;
   }
 
   .choose-font {
@@ -86,6 +95,7 @@
   }
   #result {
     font-size: 36px;
+    margin: 110px 0;
   }
 }
 	/**/
