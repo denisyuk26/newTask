@@ -18,14 +18,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
-
-
   .choose-font {
-
     a {
       padding: 11px 13px;
     }
+  }
+  .choose-bg {
 
+    margin: 10px 0;
+    a {
+      padding: 7px 15px;
+    }
   }
 
 }
@@ -33,38 +36,35 @@
 
 
 @media only screen and (max-width : 640px){
+  .settings {
+    margin-left: 0;
+    padding-left: 10px;
+  }
   #result {
     margin-left: 0;
   }
   #userbg {
-    min-height: 565px;
+
     height: 100%;
   }
   .setting-block-span {
-    text-align: center;
     padding-right: 12px;
   }
   .choose-font {
-    display: block;
     a {
       padding: 10px 12.5px;
     }
   }
   .chooses-style {
     font-size: 18px;
-    display: block;
-    text-align: center;
+    //display: block;
 
   }
   .choose-bg {
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-    margin-left: 7px;
-    &:nth-child(5) {
-      width: 76%;
 
+    margin: 10px 0;
+    a {
+      padding: 7px 15px;
     }
 }
 }
@@ -76,14 +76,14 @@
     text-align: center;
     }
   }
+
   #userbg {
-    min-height: 556px;
+    min-height: 436px;
     height: 100%;
   }
   #user-font {
     bottom: 250px;
   }
-
   .choose-font {
     a {
       padding: 10px 12.5px;
@@ -91,7 +91,6 @@
   }
   .chooses-style {
     font-size: 16px;
-
   }
   #result {
     font-size: 36px;
@@ -102,8 +101,11 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){
-
+@media only screen and (max-width : 440px){
+  #userbg {
+    min-height: 478px;
+    height: 100%;
+  }
 }
 	/**/
 
